@@ -1,17 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 import {
-  GoogleReCaptchaProvider,
-} from 'react-google-recaptcha-v3';
+  GoogleReCaptchaProvider
+} from "react-google-recaptcha-v3";
 
-ReactDOM.render(  
-  <GoogleReCaptchaProvider style=".grecaptcha-badge { visibility: hidden; }" reCaptchaKey="6LcF568bAAAAANQ4sToV_LL_GUjUkk_Ln3Z8dzay">
+
+ReactDOM.render(
+  <GoogleReCaptchaProvider
+    reCaptchaKey="6LdJo-8bAAAAAOhvdmLufi156dWtlVRd04L_uPVe"
+  >
     <App />
   </GoogleReCaptchaProvider>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
