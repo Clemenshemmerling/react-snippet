@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  GoogleReCaptchaProvider,
+} from 'react-google-recaptcha-v3';
 
-ReactDOM.render(
-  <React.StrictMode>
+ReactDOM.render(  
+  <GoogleReCaptchaProvider style=".grecaptcha-badge { visibility: hidden; }" reCaptchaKey="6LcF568bAAAAANQ4sToV_LL_GUjUkk_Ln3Z8dzay">
     <App />
-  </React.StrictMode>,
+  </GoogleReCaptchaProvider>,
   document.getElementById('root')
 );
 
